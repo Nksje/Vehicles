@@ -1,0 +1,27 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="Vehicles.AvaloniaApp.MainWindow"
+        Title="Vehicles" Width="600" Height="560">
+    <StackPanel Margin="10" Spacing="5">
+        <TextBlock Text="Nimi:" />
+        <TextBox x:Name="NameTextBox" />
+
+        <TextBlock Text="Tüüp:" />
+        <ComboBox x:Name="TypeComboBox" SelectedIndex="0">
+            <ComboBoxItem Content="Car" />
+            <ComboBoxItem Content="Boat" />
+            <ComboBoxItem Content="AmphibiousCar" />
+        </ComboBox>
+
+        <Button Content="Lisa" Click="AddButton_Click" />
+
+        <ListBox x:Name="VehiclesListBox" Height="120" />
+
+        <TextBlock Text="Vahemaa (km):" Margin="0,10,0,0" />
+        <TextBox x:Name="DistanceTextBox" Text="10" />
+        <Button Content="Move" Click="MoveButton_Click" />
+
+        <TextBlock Text="Logi:" />
+        <ListBox x:Name="LogListBox" Height="120" />
+    </StackPanel>
+</Window>
