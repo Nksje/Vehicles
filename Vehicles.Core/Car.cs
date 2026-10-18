@@ -11,4 +11,8 @@ public class Car : Vehicle
     }
 
     public override string Describe() => $"Auto: {Name}";
+
+    public override string Signal() => $"Auto {Name} annab sarvega signaali: Piip-piip!";
+
+    public override string FlashLights() => $"Auto {Name} vilgutab esitulesid.";
 }

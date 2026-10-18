@@ -24,5 +24,11 @@ public abstract class Vehicle : IMovable, IDescribable
 
     public abstract string Describe();
 
+    // Signaal, mida sõiduk annab, kui garaaži tuleb uus sõiduk.
+    public virtual string Signal() => $"{Name} annab signaali: Piiks!";
+
+    // Tulede vilgutamine, kui mõni sõiduk garaažist lahkub.
+    public virtual string FlashLights() => $"{Name} vilgutab tulesid.";
+
     public override string ToString() => $"{Describe()} | Läbisõit: {Mileage} km";
 }

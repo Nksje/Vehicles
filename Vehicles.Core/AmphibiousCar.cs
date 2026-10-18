@@ -11,4 +11,8 @@ public class AmphibiousCar : Car
     }
 
     public override string Describe() => $"Amfiibauto: {Name}";
+
+    public override string Signal() => $"Amfiibauto {Name} annab signaali: Piip-tuut!";
+
+    public override string FlashLights() => $"Amfiibauto {Name} vilgutab esi- ja navigatsioonitulesid.";
 }
